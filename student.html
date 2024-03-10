@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Management System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+  
+  
+
+  <header class="bg-primary text-white text-center py-3">
+    <h1>DHSK Leave Application Portal</h1>
+  </header>
+
+  <div class="container mt-5">
+    <h2>Leave Application</h2>
+    <form id="leaveForm">
+      <div class="form-group">
+        <label for="leaveDate">Select Leave Date:</label>
+        <input type="date" class="form-control" id="leaveDate" min="<?= date('Y-m-d') ?>">
+      </div>
+      <div class="form-group">
+        <label for="leaveReason">Leave Reason (Minimum 100 words):</label>
+        <textarea class="form-control" id="leaveReason" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <footer class=" text-center">
+    <p>Made with ❤️ by Sandeep</p>
+  </footer>
+
+  <script src="assets/js/students.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
